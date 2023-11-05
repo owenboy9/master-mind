@@ -10,6 +10,16 @@ const require = Module.createRequire(import.meta.url);
 // use require
 const prompt = require('prompt-sync')({ sigint: true });
 
+// låter oss använda funktionen som skriver till en fil
+import { appendFileSync } from 'node:fs'
+
+// funktionen lägger till texten i slutet av filen
+appendFileSync(
+  'message.txt',      // vilken fil vi vill lägga till text i
+  'here is some text\n', // text vi vill lägga till, avslutas med \n för att lägga till radbrytning
+  'utf8'              // formatet vi vill använda, utf8 betyder att det ska vara text
+)
+
 const log = console.log()
 
 export default class Game {
