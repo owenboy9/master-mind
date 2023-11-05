@@ -14,6 +14,7 @@ const prompt = require('prompt-sync')({ sigint: true });
 import { appendFileSync } from 'node:fs'
 
 // funktionen lägger till texten i slutet av filen
+//but i am personally not quite sure why i will need it here. maybe for the game to pick up where it ended?
 appendFileSync(
   'message.txt',      // vilken fil vi vill lägga till text i
   'here is some text\n', // text vi vill lägga till, avslutas med \n för att lägga till radbrytning
