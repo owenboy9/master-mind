@@ -3,6 +3,13 @@ import CodeMaster from "./code-master"
 import ColorPegs from "./color-pegs"
 import MarkPegs from "./mark-pegs"
 
+// create require for ESM-module projects
+import Module from "node:module";
+const require = Module.createRequire(import.meta.url);
+
+// use require
+const prompt = require('prompt-sync')({ sigint: true });
+
 const log = console.log()
 
 export default class Game {
