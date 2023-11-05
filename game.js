@@ -43,7 +43,7 @@ export default class Game {
       this.tryCode()
     }
   }
-
+  
   checkLose() {
     if (this.attempts >= 8 && this.codeBreaker != this.codeMaster) {
       log('didn\'t make it this time: the combination was ' + this.codeMaster)
