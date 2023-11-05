@@ -23,17 +23,15 @@ export default class Game {
     //random attempt from code-breaker
 
     //loop the following:
+
     //mark peg response
-    //informed attempt from code-breaker
+    //space for code-breaker to solve the puzzle: all the code does is open the input space for the code-breaker to make a new attempt, store it SOMEWHERE, and trigger a mark peg response
 
     //game over:
-    //code-breaker got it under 8 attempts
-    //they doesn't
+    //code-breaker broke the code in <= 10 attempts
+    //they didn't
   }
 
-  /*response-move logic is the toughest
-  
-  */
 
   checkWin() {
     if (this.codeBreaker == this.codeMaster) {
