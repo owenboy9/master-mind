@@ -1,4 +1,5 @@
 export default class ColorPegs {
+  
   constructor() {
     // An array of color names for the code pegs
     this.codePegs = ["red", "yellow", "green", "blue", "orange", "purple"]
