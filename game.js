@@ -4,11 +4,11 @@ import ColorPegs from "./color-pegs"
 import MarkPegs from "./mark-pegs"
 
 // create require for ESM-module projects
-import Module from "node:module";
-const require = Module.createRequire(import.meta.url);
+import Module from "node:module"
+const require = Module.createRequire(import.meta.url)
 
 // use require
-const prompt = require('prompt-sync')({ sigint: true });
+const prompt = require('prompt-sync')({ sigint: true })
 
 // låter oss använda funktionen som skriver till en fil
 import { appendFileSync } from 'node:fs'
@@ -50,6 +50,8 @@ export default class Game {
     //code-breaker broke the code in <= 10 attempts
     //they didn't
   }
+
+  
 
 
   checkWin() {
