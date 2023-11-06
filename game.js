@@ -1,4 +1,4 @@
-import CodeBreaker from "./code-breaker"
+import Board from "./board"
 import CodeMaster from "./code-master"
 import ColorPegs from "./color-pegs"
 import MarkPegs from "./mark-pegs"
