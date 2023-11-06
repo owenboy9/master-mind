@@ -1,5 +1,6 @@
 import ColorPegs from "./colorPegs"
-import 
+import MarkPegs from "./markPegs"
+import CodeBreaker from "./codeBreaker"
 
 export default class Board {
 

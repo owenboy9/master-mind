@@ -1,7 +1,9 @@
 import Board from "./board"
 import CodeMaster from "./codeMaster"
+import CodeBreaker from "./codeBreaker"
 import ColorPegs from "./colorPegs"
 import MarkPegs from "./markPegs"
+
 
 // create require for ESM-module projects
 import Module from "node:module"
