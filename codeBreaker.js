@@ -35,6 +35,7 @@ export default class CodeBreaker {
 
   shortColors(userInput) {
     return this.colorPegs.test(userInput)
+    //this should be done better: so that the user can only type in the first letters of each color but the program matches them with the first letters in the color array. otherwise, i can try to solve that issue in printing stage. or not solve it at all 
   }
 
 }
