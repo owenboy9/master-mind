@@ -16,7 +16,7 @@ export default class CodeBreaker {
   askQuestion() {
     let userInput
     do {
-      userInput = prompt(this.questionText)
+      userInput = prompt(this.questionText).trim().toUpperCase()
       if (!this.shortColors(userInput) == true) { 
         console.log("you can only enter the following symbols: " + this.colorPegs)
       }
