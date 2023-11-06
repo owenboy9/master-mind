@@ -7,10 +7,11 @@ import ColorPegs from "./colorPegs"
 export default class CodeBreaker {
 
   colorPegs
+  attempt = []
 
   constructor(questionText) {
     this.questionText = questionText
-    this.answer = this.askQuestion()
+    this.answer = this.makeAnAttempt
   }
 
   askQuestion() {
@@ -21,7 +22,15 @@ export default class CodeBreaker {
         console.log("you can only enter the following symbols: " + this.colorPegs)
       }
     } while (!this.shortColors(userInput) == true)
+    
     return userInput
+  }
+
+  makeAnAttempt() {
+    for (i = 0; i < 4; i++){
+      this.attempt.push(this.askQuestion())
+    }
+    return this.attempt
   }
 
   shortColors(userInput) {
