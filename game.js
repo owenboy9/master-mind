@@ -1,7 +1,7 @@
 import Board from "./board"
-import CodeMaster from "./code-master"
-import ColorPegs from "./color-pegs"
-import MarkPegs from "./mark-pegs"
+import CodeMaster from "./codeMaster"
+import ColorPegs from "./colorPegs"
+import MarkPegs from "./markPegs"
 
 // create require for ESM-module projects
 import Module from "node:module"
@@ -53,7 +53,7 @@ export default class Game {
     //they didn't
   }
 
-  
+
 
 
   checkWin() {
@@ -64,7 +64,7 @@ export default class Game {
       this.tryCode()
     }
   }
-  
+
   checkLose() {
     if (this.attempts >= 8 && this.codeBreaker != this.codeMaster) {
       log('didn\'t make it this time: the combination was ' + this.codeMaster)

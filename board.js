@@ -1,7 +1,8 @@
-import ColorPegs from "./color-pegs"
+import ColorPegs from "./colorPegs"
+import 
 
-export default class Board{
+export default class Board {
 
 
-  
+
 }
