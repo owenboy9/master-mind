@@ -38,6 +38,8 @@ export default class Game {
   round() {
     //game setup:
     //create new 4-color code
+    this.codeMaster = new CodeMaster()
+
     //make an array of four random elements taken from the codePegs array: create a this.round or so array and push them one by one. the random issue can be solved by MathRandom() with the right parameters as the index mumber within codePegs
     //random attempt from code-breaker
 
