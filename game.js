@@ -1,8 +1,8 @@
-import ColorPegs from "./colorPegs"
-import CodeMaster from "./codeMaster"
-import CodeBreaker from "./codeBreaker"
-import MarkPegs from "./markPegs"
-import Board from "./board"
+import ColorPegs from "./colorPegs.js"
+import CodeMaster from "./codeMaster.js"
+import CodeBreaker from "./codeBreaker.js"
+import MarkPegs from "./markPegs.js"
+import Board from "./board.js"
 
 
 // create require for ESM-module projects

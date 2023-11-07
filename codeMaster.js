@@ -1,4 +1,4 @@
-import ColorPegs from "./colorPegs"
+import ColorPegs from "./colorPegs.js"
 
 export default class CodeMaster {
 
