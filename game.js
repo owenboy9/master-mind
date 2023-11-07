@@ -1,8 +1,8 @@
-import Board from "./board"
+import ColorPegs from "./colorPegs"
 import CodeMaster from "./codeMaster"
 import CodeBreaker from "./codeBreaker"
-import ColorPegs from "./colorPegs"
 import MarkPegs from "./markPegs"
+import Board from "./board"
 
 
 // create require for ESM-module projects
@@ -31,6 +31,7 @@ export default class Game {
   codeMaster
   colorPegs
   markPegs
+  board
 
   constructor() {
     log('welcome to your childhood\'s favorite game')
@@ -43,7 +44,7 @@ export default class Game {
     this.codeMaster = new CodeMaster()
 
     //make an array of four random elements taken from the codePegs array: create a this.round or so array and push them one by one. the random issue can be solved by MathRandom() with the right parameters as the index mumber within codePegs
-    //random attempt from code-breaker
+    //attempt from code-breaker
 
     //loop the following:
 
