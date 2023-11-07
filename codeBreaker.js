@@ -27,7 +27,7 @@ export default class CodeBreaker {
   }
 
   makeAnAttempt() {
-    for (i = 0; i < 4; i++){
+    for (let i = 0; i < 4; i++){
       this.attempt.push(this.askQuestion())
     }
     return this.attempt

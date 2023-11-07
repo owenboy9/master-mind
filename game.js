@@ -23,8 +23,6 @@ appendFileSync(
   'utf8'              // formatet vi vill använda, utf8 betyder att det ska vara text
 )
 
-const log = console.log()
-
 export default class Game {
 
   codeBreaker
@@ -34,7 +32,7 @@ export default class Game {
   board
 
   constructor() {
-    log('welcome to your childhood\'s favorite game')
+    console.log('welcome to your childhood\'s favorite game')
     this.round()
   }
 
@@ -61,7 +59,7 @@ export default class Game {
 
   checkWin() {
     if (this.codeBreaker == this.codeMaster) {
-      log('you win!')
+      console.log('you win!')
     } else {
       //goto 20
       this.tryCode()
@@ -70,7 +68,7 @@ export default class Game {
 
   checkLose() {
     if (this.attempts >= 10 && this.codeBreaker != this.codeMaster) {
-      log('didn\'t make it this time: the combination was ' + this.codeMaster)
+      console.log('didn\'t make it this time: the combination was ' + this.codeMaster)
     } else {
       this.tryCode()
     }
