@@ -2,7 +2,7 @@ import Module from "node:module"
 const require = Module.createRequire(import.meta.url)
 const prompt = require('prompt-sync')({ sigint: true })
 
-import ColorPegs from "./colorPegs"
+import ColorPegs from "..master-mind/colorPegs"
 
 export default class CodeBreaker {
 

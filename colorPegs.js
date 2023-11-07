@@ -1,7 +1,7 @@
 export default class ColorPegs {
 
   constructor() {
-    // An array of color names for the code pegs
+    
     this.colorPegs = ["R", "Y", "G", "B", "O", "P"]
 
     /* Get the container element by its id
