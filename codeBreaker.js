@@ -11,7 +11,7 @@ export default class CodeBreaker {
 
   constructor(questionText) {
     this.questionText = questionText
-    this.answer = this.makeAnAttempt
+    this.answer = this.makeAnAttempt()
   }
 
   askQuestion() {
