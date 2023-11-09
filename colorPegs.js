@@ -15,4 +15,7 @@ export default class ColorPegs {
       colorPegsContainer.appendChild(button)
     })*/
   }
+
 }
+
+console.log("hej")

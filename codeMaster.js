@@ -7,7 +7,7 @@ export default class CodeMaster {
 
   constructor() {
     for (let i = 0; i < 4; i++) {
-      this.code.push(this.colorPegs[Math.floor(Math.random() * 6)])
+      this.code.push(this.colorPegs[(Math.floor(Math.random() * 6))])
     }
     console.log(this.code) 
   }
